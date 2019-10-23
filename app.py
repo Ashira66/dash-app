@@ -16,8 +16,8 @@ app.layout = html.Div(children=[
     html.Div(children="Unsafe drinking water in countries"),
     dcc.Graph(
         id='country-geo-graph',
-        figure= px.scatter_geo(d, locations="iso", color="Region",
-                     hover_name="country", size="UWD",template="plotly_dark",
+        figure= px.scatter_geo(d, locations="iso", color="UWD",
+                     hover_name="country", size="UWD",template="plotly_white",
                      projection="natural earth")
     ),
     html.P(children='''
